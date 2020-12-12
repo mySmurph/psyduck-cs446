@@ -44,7 +44,7 @@ def transcribe_file(job_name, file_uri, transcribe_client):
 def main():
     transcribe_client = boto3.client('transcribe')
     file_uri = 's3://psyducks-cs446/BabyTalk.wav'
-    transcribe_file('Example-job', file_uri, transcribe_client)
+    transcribe_file('BabyTalk', file_uri, transcribe_client)
 
 
 if __name__ == '__main__':
